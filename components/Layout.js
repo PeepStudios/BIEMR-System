@@ -15,6 +15,16 @@ export default props => {
             <Container style={{ paddingTop: '5%', paddingBottom: '5%' }}>
                 {props.children}
             </Container>
+            <footer style={{
+                padding: "2%",
+                background: "gray",
+            }}>
+                <Container>
+                    <p style={{
+                        color: 'white',
+                    }}>Blockchain Integrated EMR System.</p>
+                </Container>
+            </footer>
         </div>
     );
 };

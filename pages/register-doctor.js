@@ -61,7 +61,14 @@ class RegisterDoctor extends Component {
     render() {
         return (
             <Layout>
-                <Segment padded><h1>Register New Doctor</h1></Segment>
+                <Segment padded>
+                    <h1 style={{
+                        fontSize: '40px',
+                        fontWeight: 'bold',
+                    }}>
+                        Register New Doctor
+                    </h1>
+                </Segment>
                 <Segment>
                     <h2 style={{marginTop: '20px', marginBottom: '30px'}}>General Information</h2>
                     <Divider clearing/>

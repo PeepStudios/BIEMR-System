@@ -62,14 +62,21 @@ class EditDoctor extends Component {
     render() {
         return (
             <Layout>
-                <Segment padded><h1>Edit Profile</h1></Segment>
+                <Segment padded>
+                    <h1 style={{
+                        fontSize: '40px',
+                        fontWeight: 'bold',
+                    }}>
+                        Edit Record
+                    </h1>
+                </Segment>
                 <Segment>
-                <h2 style={{ marginTop: '20px', marginBottom: '30px'}}>General Information</h2>
-                <Divider clearing />
-                <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
+                    <h2 style={{marginTop: '20px', marginBottom: '30px'}}>General Information</h2>
+                    <Divider clearing/>
+                    <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                     <Form.Group widths='equal'>
                         <Form.Field>
-                            <label>IC</label>
+                            <label>ID</label>
                             <Input
                                 placeholder = 'Eg. 001234010234'                
                                 value= {this.state.ic}
