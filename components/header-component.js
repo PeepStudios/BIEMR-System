@@ -7,7 +7,8 @@ export default class HeaderComponent extends Component {
             <>
                 <div className="ui grid top-24 bg-opacity-5" style={{
                     position: "relative",
-                    overflow: "hidden"
+                    overflow: "hidden",
+                    height: "80vh"
                 }}>
                     <div className="sixteen wide column" style={{
                         backgroundImage: `url(/images/hero_bg.jpg)`,
@@ -15,7 +16,7 @@ export default class HeaderComponent extends Component {
                         backgroundRepeat: 'no-repeat',
                         backgroundPosition: 'center',
                         width: '100%',
-                        height: '50vh',
+                        height: '100vh',
                         zIndex: -0.1,
                         overflow: 'hidden',
                         display: 'flex',
