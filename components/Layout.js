@@ -9,11 +9,6 @@ import HeaderComponent from "./header-component";
 export default props => {
     return (
         <div style={{ fontFamily: "sans-serif" }}>
-            <Head>
-                <title>Blockchain-Integrated EMR System</title>
-                <link rel="stylesheet"
-                      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></link>
-            </Head>
 
             <MenuBar/>
             <HeaderComponent />

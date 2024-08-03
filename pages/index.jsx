@@ -8,8 +8,6 @@ const Index = () => {
         <>
             <Head>
                 <title>Home | Blockchain-Integrated EMR System</title>
-                <link rel="stylesheet"
-                      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></link>
             </Head>
             <MenuBar/>
             <div className="ui grid top-24 bg-opacity-5" style={{
