@@ -21,7 +21,7 @@ export default class MenuBar extends Component {
 
     render() {
         return (
-            <div className={'ui top fixed menu '} style={{width:"100%", fontSize: '20px', paddingLeft: '10px', paddingRight: '10px'}}>
+            <div className={'ui top fixed menu '} style={{width:"100%", fontSize: '17px', paddingLeft: '10px', paddingRight: '10px'}}>
 
                     <div className="item">
                         {/*<img src="https://semantic-ui.com/images/logo.png"/>*/}
