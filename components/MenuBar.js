@@ -25,23 +25,14 @@ export default class MenuBar extends Component {
         <Link route="/">Home</Link>
 
         <Menu.Menu position="right">
-          <Link route="/dashboard">Dashboar</Link>
+          <Link route="/dashboard">Dashboad</Link>
 
           <Link route="/list">Records List</Link>
 
           <Dropdown item text="Doctor">
             <Dropdown.Menu>
               <Dropdown.Item>
-                <Link route="/">View Profile</Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
                 <Link route="/edit-doctor">Edit Profile</Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <Link route="/make-appointment">Make Appointment</Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <Link route="/edit-appointment">Update Appointment</Link>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -49,10 +40,7 @@ export default class MenuBar extends Component {
           <Dropdown item text="Patient">
             <Dropdown.Menu>
               <Dropdown.Item>
-                <Link route="/">View Profile</Link>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <Link route="/edit-patient">Edit Profile</Link>
+                <Link className={'!text-black'} route="/edit-patient">Edit Profile</Link>
               </Dropdown.Item>
               <Dropdown.Item>
                 <Link route="/approve-doctor">Allow Access</Link>

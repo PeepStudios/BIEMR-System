@@ -37,15 +37,15 @@ const HomepageHeading = ({mobile}) => (
         ></link>
         <Header
             as="h1"
-            content="Blockchain-Intergrated EMR System"
+            content="Blockchain-Integrated EMR System"
             inverted
             style={{
-                fontSize: mobile ? "2em" : "4em",
-                color: "green",
-                fontWeight: "normal",
+                fontSize: mobile ? "2em" : "3em",
+                color: "blue",
+                fontWeight: "bold",
                 marginBottom: 0,
                 marginTop: mobile ? "1.5em" : "3em",
-                fontFamily: "Georgia",
+                fontFamily: "Poppins",
             }}
         />
         <Header
