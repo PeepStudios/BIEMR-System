@@ -13,5 +13,9 @@ export default function MyApp({Component, pageProps}) {
         }
     }, []);
 
-    return isClient ? <Component  {...pageProps}/> : null;
+    return (
+        isClient ? (
+            <Component  {...pageProps}/>
+        ) : null
+    )
 }
