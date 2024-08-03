@@ -21,20 +21,19 @@ export default class MenuBar extends Component {
 
     render() {
         return (
-            <div className={'ui top fixed menu '} style={{width:"100%", fontSize: '17px', paddingLeft: '10px', paddingRight: '10px'}}>
+            <div className={'ui top fixed menu '} style={{width:"100%", fontSize: '15px', paddingLeft: '10px', paddingRight: '10px'}}>
 
                     <div className="item">
                         {/*<img src="https://semantic-ui.com/images/logo.png"/>*/}
                         <h1 style={{
                             paddingLeft: '10px',
                             paddingRight: '10px',
-                            fontSize: '44px',
+                            fontSize: '25px',
                         }}>BMR-System</h1>
                     </div>
 
                     <Link className={'item'} route="/">Home</Link>
-                    <Link className={'item'} route="/dashboard">Dashboad</Link>
-
+                    <Link className={'item'} route="/dashboard">Dashboard</Link>
                     <Link className={'item'} route="/list">Records List</Link>
 
                     <div className={'right menu'}>
