@@ -26,8 +26,6 @@ export default class MenuBar extends Component {
                     <div className="item">
                         {/*<img src="https://semantic-ui.com/images/logo.png"/>*/}
                         <h1 style={{
-                            paddingLeft: '10px',
-                            paddingRight: '10px',
                             fontSize: '25px',
                         }}>BMR-System</h1>
                     </div>
@@ -37,7 +35,7 @@ export default class MenuBar extends Component {
                     <Link className={'item'} route="/list">Records List</Link>
 
                     <div className={'right menu'}>
-                        <Dropdown item text="Doctor" className={'ui'} style={{ width: '200px', paddingLeft: '10px', paddingRight: '10px' }}>
+                        <Dropdown item text="Doctor" className={'ui'} style={{ width: '110px', paddingLeft: '10px', paddingRight: '10px' }}>
                             <Dropdown.Menu>
                                 <Dropdown.Item>
                                     <Link route="/edit-doctor">Edit Profile</Link>
@@ -45,7 +43,7 @@ export default class MenuBar extends Component {
                             </Dropdown.Menu>
                         </Dropdown>
 
-                        <Dropdown item text="Patient" className={'ui'} style={{ width: '200px', paddingLeft: '10px', paddingRight: '10px' }}>
+                        <Dropdown item text="Patient" className={'ui'} style={{ width: '150px', paddingLeft: '10px', paddingRight: '10px' }}>
                             <Dropdown.Menu>
                                 <Dropdown.Item>
                                     <Link className={''} route="/edit-patient">Edit Profile</Link>
@@ -59,7 +57,7 @@ export default class MenuBar extends Component {
                             </Dropdown.Menu>
                         </Dropdown>
 
-                        <Dropdown item text="Register" className={'ui'} style={{ width: '200px', paddingLeft: '10px', paddingRight: '10px' }}>
+                        <Dropdown item text="Register" className={'ui'} style={{ width: '100px', paddingLeft: '10px', paddingRight: '10px' }}>
                             <Dropdown.Menu>
                                 <Dropdown.Item>
                                     <Link route="/register-patient">Patient</Link>
