@@ -11,10 +11,10 @@ export default class HeaderComponent extends Component {
                     height: "80vh"
                 }}>
                     <div className="sixteen wide column" style={{
-                        backgroundImage: `url(/images/hero_bg.jpg)`,
+                        backgroundImage: `url(/images/hero-bg.jpg)`,
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat',
-                        backgroundPosition: 'center',
+                        backgroundPosition: 'top',
                         width: '100%',
                         height: '100vh',
                         zIndex: -0.1,

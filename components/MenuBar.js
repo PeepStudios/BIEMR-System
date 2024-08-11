@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Menu, Icon, Dropdown} from "semantic-ui-react";
+import {Dropdown} from "semantic-ui-react";
 import web3 from "web3";
 import {Link} from "../routes";
 import {Router} from "../routes";
@@ -27,7 +27,7 @@ export default class MenuBar extends Component {
                         {/*<img src="https://semantic-ui.com/images/logo.png"/>*/}
                         <h1 style={{
                             fontSize: '25px',
-                        }}>BMR-System</h1>
+                        }}>BIEMR-System</h1>
                     </div>
 
                     <Link className={'item'} route="/">Home</Link>
@@ -35,38 +35,44 @@ export default class MenuBar extends Component {
                     <Link className={'item'} route="/list">Records List</Link>
 
                     <div className={'right menu'}>
-                        <Dropdown item text="Doctor" className={'ui'} style={{ width: '110px', paddingLeft: '10px', paddingRight: '10px' }}>
+                        <Dropdown item text="Doctor" className={'ui'} style={{ width: '150px', paddingLeft: '10px', paddingRight: '10px' }}>
                             <Dropdown.Menu>
                                 <Dropdown.Item>
                                     <Link route="/edit-doctor">Edit Profile</Link>
+                                </Dropdown.Item>
+                                <Dropdown.Item>
+                                    <Link route="/register-doctor">Register</Link>
                                 </Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
 
                         <Dropdown item text="Patient" className={'ui'} style={{ width: '150px', paddingLeft: '10px', paddingRight: '10px' }}>
                             <Dropdown.Menu>
-                                <Dropdown.Item>
-                                    <Link className={''} route="/edit-patient">Edit Profile</Link>
-                                </Dropdown.Item>
+                                {/*<Dropdown.Item>*/}
+                                {/*    <Link className={''} route="/edit-patient">Edit Profile</Link>*/}
+                                {/*</Dropdown.Item>*/}
                                 <Dropdown.Item>
                                     <Link route="/approve-doctor">Allow Access</Link>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
-                                    <Link route="/revoke-doctor">Revoke Access</Link>
+                                    <Link route="/register-patient">Register</Link>
                                 </Dropdown.Item>
+                                {/*<Dropdown.Item>*/}
+                                {/*    <Link route="/revoke-doctor">Revoke Access</Link>*/}
+                                {/*</Dropdown.Item>*/}
                             </Dropdown.Menu>
                         </Dropdown>
 
-                        <Dropdown item text="Register" className={'ui'} style={{ width: '100px', paddingLeft: '10px', paddingRight: '10px' }}>
-                            <Dropdown.Menu>
-                                <Dropdown.Item>
-                                    <Link route="/register-patient">Patient</Link>
-                                </Dropdown.Item>
-                                <Dropdown.Item>
-                                    <Link route="/register-doctor">Doctor</Link>
-                                </Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
+                        {/*<Dropdown item text="Register" className={'ui'} style={{ width: '100px', paddingLeft: '10px', paddingRight: '10px' }}>*/}
+                        {/*    <Dropdown.Menu>*/}
+                        {/*        <Dropdown.Item>*/}
+                        {/*            <Link route="/register-patient">Patient</Link>*/}
+                        {/*        </Dropdown.Item>*/}
+                        {/*        <Dropdown.Item>*/}
+                        {/*            <Link route="/register-doctor">Doctor</Link>*/}
+                        {/*        </Dropdown.Item>*/}
+                        {/*    </Dropdown.Menu>*/}
+                        {/*</Dropdown>*/}
                     </div>
             </div>
         );
