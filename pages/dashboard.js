@@ -395,7 +395,7 @@ export default class Dashboard extends PureComponent {
     return (
       <Layout>
         <>
-          <Card.Group centered itemsPerRow="2">
+          <Card.Group centered itemsPerRow="1">
             <Card color={this.props.patGrowthColor}>
               <Card.Content>
                 <Image
@@ -414,26 +414,26 @@ export default class Dashboard extends PureComponent {
               </Card.Content>
             </Card>
 
-            <Card color={this.props.apptGrowthColor}>
-              <Card.Content>
-                <Image
-                  floated="right"
-                  size="mini"
-                  src="https://cdn-icons-png.flaticon.com/512/858/858736.png"
-                />
-                <Card.Header>Month-over-Month Appointment Growth</Card.Header>
-              </Card.Content>
-              <Card.Content extra>
-                <Statistic size="small" color={this.props.apptGrowthColor}>
-                  <Statistic.Value>
-                    {this.props.appointmentMonthOverMonthChange}%
-                  </Statistic.Value>
-                </Statistic>
-              </Card.Content>
-            </Card>
+            {/*<Card color={this.props.apptGrowthColor}>*/}
+            {/*  <Card.Content>*/}
+            {/*    <Image*/}
+            {/*      floated="right"*/}
+            {/*      size="mini"*/}
+            {/*      src="https://cdn-icons-png.flaticon.com/512/858/858736.png"*/}
+            {/*    />*/}
+            {/*    <Card.Header>Month-over-Month Appointment Growth</Card.Header>*/}
+            {/*  </Card.Content>*/}
+            {/*  <Card.Content extra>*/}
+            {/*    <Statistic size="small" color={this.props.apptGrowthColor}>*/}
+            {/*      <Statistic.Value>*/}
+            {/*        {this.props.appointmentMonthOverMonthChange}%*/}
+            {/*      </Statistic.Value>*/}
+            {/*    </Statistic>*/}
+            {/*  </Card.Content>*/}
+            {/*</Card>*/}
           </Card.Group>
 
-          <Card.Group centered itemsPerRow="4">
+          <Card.Group centered itemsPerRow="2">
             <Card>
               <Card.Content>
                 <Image
@@ -450,39 +450,39 @@ export default class Dashboard extends PureComponent {
               </Card.Content>
             </Card>
 
-            <Card>
-              <Card.Content>
-                <Image
-                  floated="right"
-                  size="mini"
-                  src="https://cdn-icons-png.flaticon.com/128/3481/3481061.png"
-                />
-                <Card.Header>Number of Doctors</Card.Header>
-              </Card.Content>
-              <Card.Content extra>
-                <Statistic size="small">
-                  <Statistic.Value>{this.props.doctorCount}</Statistic.Value>
-                </Statistic>
-              </Card.Content>
-            </Card>
+            {/*<Card>*/}
+            {/*  <Card.Content>*/}
+            {/*    <Image*/}
+            {/*      floated="right"*/}
+            {/*      size="mini"*/}
+            {/*      src="https://cdn-icons-png.flaticon.com/128/3481/3481061.png"*/}
+            {/*    />*/}
+            {/*    <Card.Header>Number of Doctors</Card.Header>*/}
+            {/*  </Card.Content>*/}
+            {/*  <Card.Content extra>*/}
+            {/*    <Statistic size="small">*/}
+            {/*      <Statistic.Value>{this.props.doctorCount}</Statistic.Value>*/}
+            {/*    </Statistic>*/}
+            {/*  </Card.Content>*/}
+            {/*</Card>*/}
 
-            <Card>
-              <Card.Content>
-                <Image
-                  floated="right"
-                  size="mini"
-                  src="https://cdn-icons-png.flaticon.com/128/2693/2693507.png"
-                />
-                <Card.Header>Number of Appointments</Card.Header>
-              </Card.Content>
-              <Card.Content extra>
-                <Statistic size="small">
-                  <Statistic.Value>
-                    {this.props.appointmentCount}
-                  </Statistic.Value>
-                </Statistic>
-              </Card.Content>
-            </Card>
+            {/*<Card>*/}
+            {/*  <Card.Content>*/}
+            {/*    <Image*/}
+            {/*      floated="right"*/}
+            {/*      size="mini"*/}
+            {/*      src="https://cdn-icons-png.flaticon.com/128/2693/2693507.png"*/}
+            {/*    />*/}
+            {/*    <Card.Header>Number of Appointments</Card.Header>*/}
+            {/*  </Card.Content>*/}
+            {/*  <Card.Content extra>*/}
+            {/*    <Statistic size="small">*/}
+            {/*      <Statistic.Value>*/}
+            {/*        {this.props.appointmentCount}*/}
+            {/*      </Statistic.Value>*/}
+            {/*    </Statistic>*/}
+            {/*  </Card.Content>*/}
+            {/*</Card>*/}
 
             <Card>
               <Card.Content>
@@ -505,7 +505,7 @@ export default class Dashboard extends PureComponent {
 
           <Segment padded>
             <h3 style={{ textAlign: "center" }}>
-              Number of Patients vs Doctors in 2022
+              Number of Patients in 2024
             </h3>
             <ResponsiveContainer width="100%" aspect={3}>
               <AreaChart
@@ -540,13 +540,13 @@ export default class Dashboard extends PureComponent {
                 <CartesianGrid strokeDasharray="3 3" />
                 <Tooltip />
                 <Legend />
-                <Area
-                  type="monotone"
-                  dataKey="Doctors"
-                  stroke="#89cff0"
-                  fillOpacity={1}
-                  fill="url(#colorDoctors)"
-                />
+                {/*<Area*/}
+                {/*  type="monotone"*/}
+                {/*  dataKey="Doctors"*/}
+                {/*  stroke="#89cff0"*/}
+                {/*  fillOpacity={1}*/}
+                {/*  fill="url(#colorDoctors)"*/}
+                {/*/>*/}
                 <Area
                   type="monotone"
                   dataKey="Patients"
@@ -558,58 +558,58 @@ export default class Dashboard extends PureComponent {
             </ResponsiveContainer>
           </Segment>
 
-          <Segment padded>
-            <h3 style={{ textAlign: "center" }}>
-              Number of Appointments in 2022
-            </h3>
-            <ResponsiveContainer width="100%" aspect={3}>
-              <LineChart
-                width={500}
-                height={300}
-                data={lineData}
-                margin={{
-                  top: 10,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="Name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Line
-                  type="monotone"
-                  dataKey="Count"
-                  stroke="#8884d8"
-                  activeDot={{ r: 8 }}
-                />
-              </LineChart>
-            </ResponsiveContainer>
-          </Segment>
+          {/*<Segment padded>*/}
+          {/*  <h3 style={{ textAlign: "center" }}>*/}
+          {/*    Number of Appointments in 2024*/}
+          {/*  </h3>*/}
+          {/*  <ResponsiveContainer width="100%" aspect={3}>*/}
+          {/*    <LineChart*/}
+          {/*      width={500}*/}
+          {/*      height={300}*/}
+          {/*      data={lineData}*/}
+          {/*      margin={{*/}
+          {/*        top: 10,*/}
+          {/*        right: 30,*/}
+          {/*        left: 20,*/}
+          {/*        bottom: 5,*/}
+          {/*      }}*/}
+          {/*    >*/}
+          {/*      <CartesianGrid strokeDasharray="3 3" />*/}
+          {/*      <XAxis dataKey="Name" />*/}
+          {/*      <YAxis />*/}
+          {/*      <Tooltip />*/}
+          {/*      <Legend />*/}
+          {/*      <Line*/}
+          {/*        type="monotone"*/}
+          {/*        dataKey="Count"*/}
+          {/*        stroke="#8884d8"*/}
+          {/*        activeDot={{ r: 8 }}*/}
+          {/*      />*/}
+          {/*    </LineChart>*/}
+          {/*  </ResponsiveContainer>*/}
+          {/*</Segment>*/}
 
-          <Segment padded>
-            <h3 style={{ textAlign: "center" }}>
-              Number of Appointments per Patient
-            </h3>
-            <ResponsiveContainer width="100%" aspect={2.15}>
-              <PieChart width={400} height={400}>
-                <Pie
-                  activeIndex={this.state.activeIndex}
-                  activeShape={renderActiveShape}
-                  data={pieData}
-                  cx="50%"
-                  cy="50%"
-                  innerRadius={180}
-                  outerRadius={200}
-                  fill="#8884d8"
-                  dataKey="Count"
-                  onMouseEnter={this.onPieEnter}
-                />
-              </PieChart>
-            </ResponsiveContainer>
-          </Segment>
+          {/*<Segment padded>*/}
+          {/*  <h3 style={{ textAlign: "center" }}>*/}
+          {/*    Number of Appointments per Patient*/}
+          {/*  </h3>*/}
+          {/*  <ResponsiveContainer width="100%" aspect={2.15}>*/}
+          {/*    <PieChart width={400} height={400}>*/}
+          {/*      <Pie*/}
+          {/*        activeIndex={this.state.activeIndex}*/}
+          {/*        activeShape={renderActiveShape}*/}
+          {/*        data={pieData}*/}
+          {/*        cx="50%"*/}
+          {/*        cy="50%"*/}
+          {/*        innerRadius={180}*/}
+          {/*        outerRadius={200}*/}
+          {/*        fill="#8884d8"*/}
+          {/*        dataKey="Count"*/}
+          {/*        onMouseEnter={this.onPieEnter}*/}
+          {/*      />*/}
+          {/*    </PieChart>*/}
+          {/*  </ResponsiveContainer>*/}
+          {/*</Segment>*/}
         </>
       </Layout>
     );

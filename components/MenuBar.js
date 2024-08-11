@@ -35,33 +35,31 @@ export default class MenuBar extends Component {
                     <Link className={'item'} route="/list">Records List</Link>
 
                     <div className={'right menu'}>
-                        <Dropdown item text="Doctor" className={'ui'} style={{ width: '150px', paddingLeft: '10px', paddingRight: '10px' }}>
+                        <Dropdown item text="Patient" className={'ui'} style={{ width: '150px', paddingLeft: '10px', paddingRight: '10px' }}>
                             <Dropdown.Menu>
                                 <Dropdown.Item>
-                                    <Link route="/edit-doctor">Edit Profile</Link>
+                                    <Link route="/register-patient">Register</Link>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
-                                    <Link route="/register-doctor">Register</Link>
+                                    <Link className={''} route="/edit-patient">Edit Profile</Link>
                                 </Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
 
-                        <Dropdown item text="Patient" className={'ui'} style={{ width: '150px', paddingLeft: '10px', paddingRight: '10px' }}>
-                            <Dropdown.Menu>
-                                {/*<Dropdown.Item>*/}
-                                {/*    <Link className={''} route="/edit-patient">Edit Profile</Link>*/}
-                                {/*</Dropdown.Item>*/}
-                                <Dropdown.Item>
-                                    <Link route="/approve-doctor">Allow Access</Link>
-                                </Dropdown.Item>
-                                <Dropdown.Item>
-                                    <Link route="/register-patient">Register</Link>
-                                </Dropdown.Item>
-                                {/*<Dropdown.Item>*/}
-                                {/*    <Link route="/revoke-doctor">Revoke Access</Link>*/}
-                                {/*</Dropdown.Item>*/}
-                            </Dropdown.Menu>
-                        </Dropdown>
+                        <Link className={'item'} route="/approve-doctor">Allow Access</Link>
+                        <Link className={'item'}  route="/revoke-doctor">Revoke Access</Link>
+
+                        {/*<Dropdown item text="Doctor" className={'ui'} style={{ width: '150px', paddingLeft: '10px', paddingRight: '10px' }}>*/}
+                        {/*    <Dropdown.Menu>*/}
+                        {/*        <Dropdown.Item>*/}
+                        {/*            <Link route="/edit-doctor">Edit Profile</Link>*/}
+                        {/*        </Dropdown.Item>*/}
+                        {/*        <Dropdown.Item>*/}
+                        {/*            <Link route="/register-doctor">Register</Link>*/}
+                        {/*        </Dropdown.Item>*/}
+                        {/*    </Dropdown.Menu>*/}
+                        {/*</Dropdown>*/}
+
 
                         {/*<Dropdown item text="Register" className={'ui'} style={{ width: '100px', paddingLeft: '10px', paddingRight: '10px' }}>*/}
                         {/*    <Dropdown.Menu>*/}
