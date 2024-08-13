@@ -30,13 +30,13 @@ class RecordDetails extends Component {
         .call({ from: accounts[0] });
       console.log("Patient Medical Records:", records2);
 
-      console.log("Fetching appointment records");
-      appointment = await record.methods
-        .searchAppointment(addr)
-        .call({ from: accounts[0] });
-      console.log("Appointment Records:", appointment);
+      // console.log("Fetching appointment records");
+      // appointment = await record.methods
+      //   .searchAppointment(addr)
+      //   .call({ from: accounts[0] });
+      // console.log("Appointment Records:", appointment);
 
-      if (appointment[0].includes("0x00000000000")) appointment[0] = "";
+      // if (appointment[0].includes("0x00000000000")) appointment[0] = "";
 
       profilePic =
         records[3] === "Male"
@@ -59,14 +59,14 @@ class RecordDetails extends Component {
         emergencyName: records2.emergencyName,
         emergencyContact: records2.emergencyContact,
 
-        doctoraddr: appointment[0],
-        doctorname: appointment[1],
-        date: appointment[2],
-        time: appointment[3],
-        diagnosis: appointment[4],
-        prescription: appointment[5],
-        description: appointment[6],
-        status: appointment[7],
+        // doctoraddr: appointment[0],
+        // doctorname: appointment[1],
+        // date: appointment[2],
+        // time: appointment[3],
+        // diagnosis: appointment[4],
+        // prescription: appointment[5],
+        // description: appointment[6],
+        // status: appointment[7],
         profilePic,
       };
     } catch (err) {
@@ -97,7 +97,7 @@ class RecordDetails extends Component {
                 <Grid columns={2}>
                   <Grid.Row>
                     <Grid.Column>
-                      <b style={{ color: "grey" }}>IC</b>
+                      <b style={{ color: "grey" }}>ID</b>
                     </Grid.Column>
                     <Grid.Column>
                       <b>{this.props.ic}</b>
@@ -224,7 +224,7 @@ class RecordDetails extends Component {
               </Grid>
             </Segment>
 
-            <Segment>
+            {/* <Segment>
               <Header as="h3" color="grey" style={{ marginBottom: "25px" }}>
                 APPOINTMENT
               </Header>
@@ -290,7 +290,7 @@ class RecordDetails extends Component {
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
-            </Segment>
+            </Segment> */}
           </Grid.Column>
           <Grid.Column width={1} />
         </Grid.Row>

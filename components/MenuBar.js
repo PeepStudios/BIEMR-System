@@ -41,7 +41,7 @@ export default class MenuBar extends Component {
                                     <Link route="/register-patient">Register</Link>
                                 </Dropdown.Item>
                                 <Dropdown.Item>
-                                    <Link className={''} route="/edit-patient">Edit Profile</Link>
+                                    <Link className={''} route="/edit-patient">Edit</Link>
                                 </Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>

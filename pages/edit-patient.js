@@ -16,6 +16,7 @@ const allergyOptions = [
     { key: 'm', text: 'Medical', value: 'Medical' },
     { key: 'e', text: 'Environmental', value: 'Environmental' },
     { key: 'o', text: 'Others', value: 'Others' },
+    { key: 'n', text: 'None', value: 'None'},
 ]
 
 class EditPatient extends Component {
@@ -82,7 +83,7 @@ class EditPatient extends Component {
                     <Divider clearing/>
                     <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                     <Form.Group widths='equal'>
-                        <Form.Field>
+                        {/* <Form.Field>
                             <label>ID</label>
                             <Input
                                 placeholder = 'Eg. 001234010234'                
@@ -90,12 +91,12 @@ class EditPatient extends Component {
                                 onChange= {event => 
                                     this.setState({ ic: event.target.value })}                           
                             />
-                        </Form.Field>
+                        </Form.Field> */}
 
                         <Form.Field>
                             <label>Full Name</label>
                             <Input
-                                placeholder = 'Eg. John Smith'                        
+                                placeholder = 'Eg. Mike Kabero'                        
                                 value= {this.state.name}
                                 onChange= {event => 
                                     this.setState({ name: event.target.value })}                           
@@ -105,7 +106,7 @@ class EditPatient extends Component {
                         <Form.Field>
                             <label>Phone</label>
                             <Input
-                                placeholder = 'Eg. 0123456789'
+                                placeholder = 'Eg. 0753410299'
                                 value= {this.state.phone}
                                 onChange= {event => 
                                     this.setState({ phone: event.target.value })}  
@@ -124,7 +125,7 @@ class EditPatient extends Component {
                         <Form.Field>
                             <label>Date of Birth</label>
                             <Input 
-                                placeholder = 'Eg. 01/01/1997'
+                                placeholder = 'Eg. 26/05/2002'
                                 value= {this.state.dob}
                                 onChange= {event => 
                                     this.setState({ dob: event.target.value })}  
@@ -134,7 +135,7 @@ class EditPatient extends Component {
                         <Form.Field>
                             <label>Height</label>
                             <Input 
-                                placeholder = 'Eg. 183'
+                                placeholder = 'Eg. 180'
                                 label={{ basic: true, content: 'cm' }}
                                 labelPosition='right'
                                 value= {this.state.height}
@@ -146,7 +147,7 @@ class EditPatient extends Component {
                         <Form.Field>
                             <label>Weight</label>
                             <Input 
-                                placeholder = 'Eg. 65'
+                                placeholder = 'Eg. 60'
                                 label={{ basic: true, content: 'kg' }}
                                 labelPosition='right'
                                 value= {this.state.weight}
@@ -160,7 +161,7 @@ class EditPatient extends Component {
                     <Form.Group widths='equal'>
                         <Form.TextArea
                                 label='House Address'
-                                placeholder = 'Eg. 1234, Jalan Seksyen 1/3, 31900 Kampar, Perak'
+                                placeholder = 'Eg. 108, Haile Selassie Rd'
                                 value= {this.state.houseaddr}
                                 onChange= {event => 
                                     this.setState({ houseaddr: event.target.value })}  
@@ -174,7 +175,7 @@ class EditPatient extends Component {
                         <Form.Field>
                             <label>Blood Group</label>
                             <Input 
-                                placeholder = 'Eg. A-'
+                                placeholder = 'Eg. A+'
                                 value= {this.state.bloodgroup}
                                 onChange= {event => 
                                     this.setState({ bloodgroup: event.target.value })}  
@@ -192,7 +193,7 @@ class EditPatient extends Component {
                     <Form.Group widths='equal'>
                         <Form.TextArea
                                 label='Current Medications'
-                                placeholder = 'Eg. Antidepressants'
+                                placeholder = 'Eg. Paracetamol'
                                 value= {this.state.medication}
                                 onChange= {event => 
                                     this.setState({ medication: event.target.value })}  
@@ -206,7 +207,7 @@ class EditPatient extends Component {
                        <Form.Field>
                             <label>Emergency Contact Name</label>
                             <Input 
-                                placeholder = 'Eg. Taylor Smith'
+                                placeholder = 'Eg. Victor Muhagachi'
                                 value= {this.state.emergencyName}
                                 onChange= {event => 
                                     this.setState({ emergencyName: event.target.value })}  
@@ -216,7 +217,7 @@ class EditPatient extends Component {
                         <Form.Field>
                             <label>Emergency Contact Phone</label>
                             <Input 
-                                placeholder = 'Eg. 0124995002'
+                                placeholder = 'Eg. 0744277496'
                                 value= {this.state.emergencyContact}
                                 onChange= {event => 
                                     this.setState({ emergencyContact: event.target.value })}  
