@@ -235,7 +235,7 @@ class RegisterPatient extends Component {
                             <Form.Field>
                                 <label>Emergency Contact Name</label>
                                 <Input
-                                    placeholder='Eg. Victor Muhagachi'
+                                    placeholder='Eg. Rose Mbezi'
                                     value={this.state.emergencyName}
                                     onChange={event =>
                                         this.setState({emergencyName: event.target.value})}
@@ -245,7 +245,7 @@ class RegisterPatient extends Component {
                             <Form.Field>
                                 <label>Emergency Contact Phone</label>
                                 <Input
-                                    placeholder='Eg. 0744277496'
+                                    placeholder='Eg. 0712017105'
                                     value={this.state.emergencyContact}
                                     onChange={event =>
                                         this.setState({emergencyContact: event.target.value})}
