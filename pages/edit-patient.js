@@ -56,7 +56,7 @@ class EditPatient extends Component {
                 ic, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, medication, emergencyName, emergencyContact
             ).send({ from: accounts[0] });
 
-            alert("Account created successfully!");
+            alert("Patient record updated successfully!");
             Router.pushRoute('/list');
         }
         catch (err) {
