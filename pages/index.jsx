@@ -160,7 +160,7 @@ const Index = () => {
               color: "white",
             }}
           >
-            Blockchain Integrated EMR System.
+            Blockchain-Integrated EMR System
           </p>
         </Container>
       </footer>

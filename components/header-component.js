@@ -45,7 +45,7 @@ export default class HeaderComponent extends Component {
                             backgroundColor: 'white',
                             border: "1px solid",
                             borderRadius: "5px",
-                        }}>Blockchain Integrated EMR System</h1>
+                        }}>Blockchain-Integrated EMR System</h1>
                     </Header>
                 </div>
             </>

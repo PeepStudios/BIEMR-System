@@ -22,7 +22,7 @@ export default props => {
                 <Container>
                     <p style={{
                         color: 'white',
-                    }}>Blockchain Integrated EMR System.</p>
+                    }}>Blockchain-Integrated EMR System.</p>
                 </Container>
             </footer>
         </div>
