@@ -37,7 +37,7 @@ class RevokeDoctor extends Component {
                     <Header
                             as='h2'
                             content='Revoke Access'
-                            subheader='Revoke permission for doctor or patient to view records'
+                            subheader='Revoke permission to view records'
                     ></Header>
                     <Input 
                         fluid
