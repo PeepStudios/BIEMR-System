@@ -95,14 +95,14 @@ class RecordDetails extends Component {
               <Segment>
                 <h2 style={{ marginBottom: "25px" }}>{this.props.name}</h2>
                 <Grid columns={2}>
-                  <Grid.Row>
+                  {/* <Grid.Row>
                     <Grid.Column>
                       <b style={{ color: "grey" }}>ID</b>
                     </Grid.Column>
                     <Grid.Column>
                       <b>{this.props.ic}</b>
                     </Grid.Column>
-                  </Grid.Row>
+                  </Grid.Row> */}
                 </Grid>
                 <Grid columns={2}>
                   <Grid.Row>

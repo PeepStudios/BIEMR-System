@@ -84,7 +84,7 @@ class EditPatient extends Component {
                     <Divider clearing/>
                     <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                     <Form.Group widths='equal'>
-                        <Form.Field>
+                        {/* <Form.Field>
                             <label>ID</label>
                             <Input
                                 placeholder = 'Eg. 20020526-12113-00001-20'                
@@ -92,7 +92,7 @@ class EditPatient extends Component {
                                 onChange= {event => 
                                     this.setState({ ic: event.target.value })}                           
                             />
-                        </Form.Field>
+                        </Form.Field> */}
 
                         <Form.Field>
                             <label>Full Name</label>
