@@ -93,7 +93,7 @@ class RecordDetails extends Component {
                 circular
               />
               <Segment>
-                <h2 style={{ marginBottom: "25px" }}>{this.props.name}</h2>
+                <h2 style={{ marginBottom: "25px", textAlign: "center"}}>{this.props.name}</h2>
                 <Grid columns={2}>
                   {/* <Grid.Row>
                     <Grid.Column>
