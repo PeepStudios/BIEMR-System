@@ -41,7 +41,7 @@ class RevokeDoctor extends Component {
                     ></Header>
                     <Input 
                         fluid
-                        placeholder = "Doctor's Ethereum Address"
+                        placeholder = "Paste Ethereum Address here"
                         value= {this.state.doctorAddr}
                         onChange= {event => 
                             this.setState({ doctorAddr: event.target.value })}  
