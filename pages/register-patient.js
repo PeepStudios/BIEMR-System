@@ -103,7 +103,7 @@ class RegisterPatient extends Component {
                         fontSize: '40px',
                         fontWeight: 'bold',
                     }}>
-                        Register New Patient
+                        Register Patient
                     </h1>
                 </Segment>
                 <Segment>
