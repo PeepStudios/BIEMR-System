@@ -55,6 +55,7 @@ class RecordDetails extends Component {
         houseaddr: records2.houseaddr,
         bloodgroup: records2.bloodgroup,
         allergies: records2.allergies,
+        ailments: records2.ailments,
         medication: records2.medication,
         emergencyName: records2.emergencyName,
         emergencyContact: records2.emergencyContact,
@@ -222,6 +223,12 @@ class RecordDetails extends Component {
 
               <Grid>
                 <Grid.Row>
+                  <Grid.Column>
+                    <b style={{ color: "grey" }}>Ailments</b>
+                    <div style={{ fontWeight: "bold" }}>
+                      {this.props.ailments}
+                    </div>
+                  </Grid.Column>
                   <Grid.Column>
                     <b style={{ color: "grey" }}>Medications</b>
                     <div style={{ fontWeight: "bold" }}>

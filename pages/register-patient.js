@@ -31,6 +31,7 @@ class RegisterPatient extends Component {
         houseaddr: '',
         bloodgroup: '',
         allergies: '',
+        ailments: '',
         medication: '',
         emergencyName: '',
         emergencyContact: '',
@@ -56,6 +57,7 @@ class RegisterPatient extends Component {
             houseaddr,
             bloodgroup,
             allergies,
+            ailments,
             medication,
             emergencyName,
             emergencyContact
@@ -67,7 +69,7 @@ class RegisterPatient extends Component {
             const accounts = await web3.eth.getAccounts();
 
             await record.methods.setDetails(
-                ic, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, medication, emergencyName, emergencyContact
+                ic, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, ailments, medication, emergencyName, emergencyContact
             ).send({from: accounts[0]});
 
             alert("Patient record created successfully!");
@@ -89,6 +91,7 @@ class RegisterPatient extends Component {
             houseaddr: '',
             bloodgroup: '',
             allergies: '',
+            ailments:'',
             medication: '',
             emergencyName: '',
             emergencyContact: ''
@@ -217,18 +220,31 @@ class RegisterPatient extends Component {
                                 onChange={this.handleAllergies}
                             />
                         </Form.Group>
+
                         <br/>
                         <Form.Group widths='equal'>
                             <Form.TextArea
-                                label='Current Medications'
+                                label='Ailments'
+                                placeholder='Eg. Headache'
+                                value={this.state.ailments}
+                                onChange={event =>
+                                    this.setState({ailments: event.target.value})}
+                            />
+                        </Form.Group>
+                        <br/>
+                        
+                        <br/>
+                        <Form.Group widths='equal'>
+                            <Form.TextArea
+                                label='Medications'
                                 placeholder='Eg. Paracetamol'
                                 value={this.state.medication}
                                 onChange={event =>
                                     this.setState({medication: event.target.value})}
                             />
                         </Form.Group>
-
                         <br/>
+
                         <h2 style={{marginTop: '20px', marginBottom: '30px'}}>Emergency Contact</h2>
                         <Divider clearing/>
                         <Form.Group widths='equal'>

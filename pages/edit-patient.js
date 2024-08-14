@@ -32,6 +32,7 @@ class EditPatient extends Component {
         houseaddr: '',
         bloodgroup: '',
         allergies: '',
+        ailments: '',
         medication: '',
         emergencyName: '',
         emergencyContact: '',
@@ -46,7 +47,7 @@ class EditPatient extends Component {
     onSubmit = async event => {
         event.preventDefault();
 
-        const { ic, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, medication, emergencyName, emergencyContact } = this.state;
+        const { ic, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, ailments, medication, emergencyName, emergencyContact } = this.state;
 
         this.setState({loading: true, errorMessage: ''});
 
@@ -54,7 +55,7 @@ class EditPatient extends Component {
             const accounts = await web3.eth.getAccounts();
 
             await record.methods.editDetails(
-                ic, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, medication, emergencyName, emergencyContact
+                ic, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, ailments, medication, emergencyName, emergencyContact
             ).send({ from: accounts[0] });
 
             alert("Patient record updated successfully!");
@@ -65,7 +66,7 @@ class EditPatient extends Component {
             alert("Account already exists");
         }
 
-        this.setState({ loading: false, ic: '', name: '', phone: '', gender: '', dob: '', height: '', weight: '', houseaddr: '', bloodgroup: '', allergies: '', medication: '', emergencyName: '', emergencyContact: ''});
+        this.setState({ loading: false, ic: '', name: '', phone: '', gender: '', dob: '', height: '', weight: '', houseaddr: '', bloodgroup: '', allergies: '', ailments: '', medication: '', emergencyName: '', emergencyContact: ''});
     }
 
     render() {
@@ -190,18 +191,31 @@ class EditPatient extends Component {
                                 onChange={this.handleAllergies}
                         />
                     </Form.Group>
+
                     <br/>
                     <Form.Group widths='equal'>
                         <Form.TextArea
-                                label='Current Medications'
+                                label='Ailments'
+                                placeholder = 'Eg. Headache'
+                                value= {this.state.ailments}
+                                onChange= {event => 
+                                    this.setState({ ailments: event.target.value })}  
+                        />
+                    </Form.Group>
+                    <br/>
+
+                    <br/>
+                    <Form.Group widths='equal'>
+                        <Form.TextArea
+                                label='Medications'
                                 placeholder = 'Eg. Paracetamol'
                                 value= {this.state.medication}
                                 onChange= {event => 
                                     this.setState({ medication: event.target.value })}  
                         />
                     </Form.Group>
-
                     <br/>
+
                     <h2 style={{ marginTop: '20px', marginBottom: '30px'}}>Emergency Contact</h2>
                     <Divider clearing />
                     <Form.Group widths='equal'>

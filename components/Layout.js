@@ -17,7 +17,7 @@ export default props => {
             </Container>
             <footer style={{
                 padding: "2%",
-                background: "gray",
+                background: "lightgray",
             }}>
                 <Container>
                     <p style={{
