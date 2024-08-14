@@ -37,11 +37,11 @@ class ApproveDoctor extends Component {
                     <Header
                             as='h2'
                             content='Allow Access'
-                            subheader='Give doctor or patient permission to view records'
+                            subheader='Give permission to view records'
                     ></Header>
                     <Input 
                         fluid
-                        placeholder = "Doctor's Ethereum Address"
+                        placeholder = "Paste Ethereum Address here"
                         value= {this.state.doctorAddr}
                         onChange= {event => 
                             this.setState({ doctorAddr: event.target.value })}  
