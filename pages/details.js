@@ -126,7 +126,8 @@ class RecordDetails extends Component {
                 </Grid>
               </Segment>
             </Segment>
-            <Segment>
+
+            {/* <Segment>
               <Header as="h3" color="grey" style={{ marginBottom: "25px" }}>
                 EMERGENCY CONTACT
               </Header>
@@ -146,7 +147,8 @@ class RecordDetails extends Component {
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
-            </Segment>
+            </Segment> */}
+
           </Grid.Column>
           <Grid.Column width={9}>
             <Segment>
@@ -207,6 +209,26 @@ class RecordDetails extends Component {
                     <b style={{ color: "grey" }}>Allergies</b>
                     <div style={{ fontWeight: "bold" }}>
                       {this.props.allergies}
+                    </div>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+
+              <Header as="h3" color="grey" style={{ marginBottom: "25px" }}>
+                EMERGENCY CONTACT
+              </Header>
+              <Grid columns={2} verticalAlign="top">
+                <Grid.Row>
+                  <Grid.Column>
+                    <b style={{ color: "grey" }}>Name</b>
+                    <div style={{ fontWeight: "bold" }}>
+                      {this.props.emergencyName}
+                    </div>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <b style={{ color: "grey" }}>Phone</b>
+                    <div style={{ fontWeight: "bold" }}>
+                      {this.props.emergencyContact}
                     </div>
                   </Grid.Column>
                 </Grid.Row>
