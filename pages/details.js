@@ -230,9 +230,7 @@ class RecordDetails extends Component {
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
-            </Segment>
-
-
+              
               <Header as="h3" color="grey" style={{ marginBottom: "25px" }}>
                 EMERGENCY CONTACT
               </Header>
@@ -252,6 +250,10 @@ class RecordDetails extends Component {
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
+            </Segment>
+
+
+              
 
 
             {/* <Segment>
