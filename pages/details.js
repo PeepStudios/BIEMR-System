@@ -103,17 +103,10 @@ class RecordDetails extends Component {
                       <b>{this.props.ic}</b>
                     </Grid.Column>
                   </Grid.Row> */}
+
+
                 </Grid>
-                <Grid columns={2}>
-                  <Grid.Row>
-                    <Grid.Column>
-                      <b style={{ color: "grey" }}>Phone</b>
-                    </Grid.Column>
-                    <Grid.Column>
-                      <b>{this.props.phone}</b>
-                    </Grid.Column>
-                  </Grid.Row>
-                </Grid>
+
                 <Grid columns={2}>
                   <Grid.Row>
                     <Grid.Column>
@@ -124,6 +117,19 @@ class RecordDetails extends Component {
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>
+                
+                <Grid columns={2}>
+                  <Grid.Row>
+                    <Grid.Column>
+                      <b style={{ color: "grey" }}>Phone</b>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <b>{this.props.phone}</b>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+
+               
               </Segment>
             </Segment>
 
@@ -214,6 +220,19 @@ class RecordDetails extends Component {
                 </Grid.Row>
               </Grid>
 
+              <Grid>
+                <Grid.Row>
+                  <Grid.Column>
+                    <b style={{ color: "grey" }}>Medications</b>
+                    <div style={{ fontWeight: "bold" }}>
+                      {this.props.medication}
+                    </div>
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </Segment>
+
+
               <Header as="h3" color="grey" style={{ marginBottom: "25px" }}>
                 EMERGENCY CONTACT
               </Header>
@@ -234,17 +253,6 @@ class RecordDetails extends Component {
                 </Grid.Row>
               </Grid>
 
-              <Grid>
-                <Grid.Row>
-                  <Grid.Column>
-                    <b style={{ color: "grey" }}>Medications</b>
-                    <div style={{ fontWeight: "bold" }}>
-                      {this.props.medication}
-                    </div>
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
-            </Segment>
 
             {/* <Segment>
               <Header as="h3" color="grey" style={{ marginBottom: "25px" }}>
