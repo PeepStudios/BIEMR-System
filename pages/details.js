@@ -221,7 +221,8 @@ class RecordDetails extends Component {
                 </Grid.Row>
               </Grid>
 
-              <Grid>
+              </Header>
+              <Grid columns={2} verticalAlign="top">
                 <Grid.Row>
                   <Grid.Column>
                     <b style={{ color: "grey" }}>Ailments</b>
