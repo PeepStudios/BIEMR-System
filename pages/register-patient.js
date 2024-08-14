@@ -115,9 +115,9 @@ class RegisterPatient extends Component {
                                 <label>ID</label>
                                 <Input
                                     placeholder='Eg. 20020526-12113-00001-20'
-                                    value={this.state.ic}
+                                    value={this.state.id}
                                     onChange={event =>
-                                        this.setState({ic: event.target.value})}
+                                        this.setState({id: event.target.value})}
                                 />
                             </Form.Field>
 
