@@ -12,6 +12,7 @@ contract Record {
         string houseaddr;
         string bloodgroup;
         string allergies;
+        string ailments;
         string medication;
         string emergencyName;
         string emergencyContact;
@@ -67,7 +68,7 @@ contract Record {
     }
     
     //Retrieve patient details from user sign up page and store the details into the blockchain
-    function setDetails(string memory _ic, string memory _name, string memory _phone, string memory _gender, string memory _dob, string memory _height, string memory _weight, string memory _houseaddr, string memory _bloodgroup, string memory _allergies, string memory _medication, string memory _emergencyName, string memory _emergencyContact) public {
+    function setDetails(string memory _ic, string memory _name, string memory _phone, string memory _gender, string memory _dob, string memory _height, string memory _weight, string memory _houseaddr, string memory _bloodgroup, string memory _allergies,string memory _ailments, string memory _medication, string memory _emergencyName, string memory _emergencyContact) public {
         require(!isPatient[msg.sender]);
 
 
@@ -83,6 +84,7 @@ contract Record {
         houseaddr: _houseaddr,
         bloodgroup :_bloodgroup,
         allergies: _allergies,
+        ailments:_ailments,
         medication:_medication,
         emergencyName :_emergencyName,
         emergencyContact :_emergencyContact,
@@ -100,7 +102,7 @@ contract Record {
     }
     
     //Allows patient to edit their existing record
-    function editDetails(string memory _ic, string memory _name, string memory _phone, string memory _gender, string memory _dob, string memory _height, string memory _weight, string memory _houseaddr, string memory _bloodgroup, string memory _allergies, string memory _medication, string memory _emergencyName, string memory _emergencyContact) public {
+    function editDetails(string memory _ic, string memory _name, string memory _phone, string memory _gender, string memory _dob, string memory _height, string memory _weight, string memory _houseaddr, string memory _bloodgroup, string memory _allergies, string memory _ailments, string memory _medication, string memory _emergencyName, string memory _emergencyContact) public {
         require(isPatient[msg.sender]);
         Patients memory p = patients[msg.sender];
         
@@ -114,6 +116,7 @@ contract Record {
         p.houseaddr = _houseaddr;
         p.bloodgroup = _bloodgroup;
         p.allergies = _allergies;
+        p.ailments = _ailments;
         p.medication = _medication;
         p.emergencyName = _emergencyName;
         p.emergencyContact = _emergencyContact;
