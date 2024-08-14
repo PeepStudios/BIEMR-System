@@ -67,7 +67,7 @@ class RegisterPatient extends Component {
             const accounts = await web3.eth.getAccounts();
 
             await record.methods.setDetails(
-                ic, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, medication, emergencyName, emergencyContact
+                id, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, medication, emergencyName, emergencyContact
             ).send({from: accounts[0]});
 
             alert("Patient record created successfully!");
