@@ -44,7 +44,7 @@ class RecordDetails extends Component {
           : "https://cdn-icons-png.flaticon.com/512/3135/3135789.png";
 
       return {
-        id: records2.id,
+        ic: records2.ic,
         name: records2.name,
         phone: records2.phone,
         gender: records2.gender,
@@ -100,7 +100,7 @@ class RecordDetails extends Component {
                       <b style={{ color: "grey" }}>ID</b>
                     </Grid.Column>
                     <Grid.Column>
-                      <b>{this.props.id}</b>
+                      <b>{this.props.ic}</b>
                     </Grid.Column>
                   </Grid.Row>
                 </Grid>

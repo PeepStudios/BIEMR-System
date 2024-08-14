@@ -21,7 +21,7 @@ const allergyOptions = [
 
 class RegisterPatient extends Component {
     state = {
-        id: '',
+        ic: '',
         name: '',
         phone: '',
         gender: '',
@@ -46,7 +46,7 @@ class RegisterPatient extends Component {
         event.preventDefault();
 
         const {
-            id,
+            ic,
             name,
             phone,
             gender,
@@ -67,7 +67,7 @@ class RegisterPatient extends Component {
             const accounts = await web3.eth.getAccounts();
 
             await record.methods.setDetails(
-                id, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, medication, emergencyName, emergencyContact
+                ic, name, phone, gender, dob, height, weight, houseaddr, bloodgroup, allergies, medication, emergencyName, emergencyContact
             ).send({from: accounts[0]});
 
             alert("Patient record created successfully!");
@@ -79,7 +79,7 @@ class RegisterPatient extends Component {
 
         this.setState({
             loading: false,
-            id: '',
+            ic: '',
             name: '',
             phone: '',
             gender: '',
@@ -111,15 +111,15 @@ class RegisterPatient extends Component {
                     <Divider clearing/>
                     <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                         <Form.Group widths='equal'>
-                            <Form.Field>
+                            {/* <Form.Field>
                                 <label>ID</label>
                                 <Input
                                     placeholder='Eg. 20020526-12113-00001-20'
-                                    value={this.state.id}
+                                    value={this.state.ic}
                                     onChange={event =>
-                                        this.setState({id: event.target.value})}
+                                        this.setState({ic: event.target.value})}
                                 />
-                            </Form.Field>
+                            </Form.Field> */}
 
                             <Form.Field>
                                 <label>Full Name</label>

@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import record from '../ethereum/record';
 import web3 from '../ethereum/web3';
 import { Router } from '../routes';
+import { id } from 'ethers';
 
 const options = [
     { key: 'm', text: 'Male', value: 'Male' },
@@ -83,15 +84,15 @@ class EditPatient extends Component {
                     <Divider clearing/>
                     <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                     <Form.Group widths='equal'>
-                        {/* <Form.Field>
+                        <Form.Field>
                             <label>ID</label>
                             <Input
-                                placeholder = 'Eg. 001234010234'                
+                                placeholder = 'Eg. 20020526-12113-00001-20'                
                                 value= {this.state.ic}
                                 onChange= {event => 
                                     this.setState({ ic: event.target.value })}                           
                             />
-                        </Form.Field> */}
+                        </Form.Field>
 
                         <Form.Field>
                             <label>Full Name</label>
