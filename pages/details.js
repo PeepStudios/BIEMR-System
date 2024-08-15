@@ -230,7 +230,7 @@ class RecordDetails extends Component {
                     </div>
                   </Grid.Column> */}
                   <Grid.Column>
-                    <b style={{ color: "grey" }}>Medications</b>
+                    <b style={{ color: "grey" }}>Summary</b>
                     <div style={{ fontWeight: "bold" }}>
                       {this.props.medication}
                     </div>
