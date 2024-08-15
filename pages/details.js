@@ -221,7 +221,6 @@ class RecordDetails extends Component {
                 </Grid.Row>
               </Grid>
 
-              </Header>
               <Grid columns={2} verticalAlign="top">
                 <Grid.Row>
                   <Grid.Column>
