@@ -221,7 +221,7 @@ class RegisterPatient extends Component {
                             />
                         </Form.Group>
 
-                        <br/>
+                        {/* <br/>
                         <Form.Group widths='equal'>
                             <Form.TextArea
                                 label='Ailments'
@@ -231,7 +231,7 @@ class RegisterPatient extends Component {
                                     this.setState({ailments: event.target.value})}
                             />
                         </Form.Group>
-                        <br/>
+                        <br/> */}
                         
                         <br/>
                         <Form.Group widths='equal'>

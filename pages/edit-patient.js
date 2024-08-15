@@ -192,7 +192,7 @@ class EditPatient extends Component {
                         />
                     </Form.Group>
 
-                    <br/>
+                    {/* <br/>
                     <Form.Group widths='equal'>
                         <Form.TextArea
                                 label='Ailments'
@@ -202,7 +202,7 @@ class EditPatient extends Component {
                                     this.setState({ ailments: event.target.value })}  
                         />
                     </Form.Group>
-                    <br/>
+                    <br/> */}
 
                     <br/>
                     <Form.Group widths='equal'>

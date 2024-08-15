@@ -223,12 +223,12 @@ class RecordDetails extends Component {
 
               <Grid columns={2} verticalAlign="top">
                 <Grid.Row>
-                  <Grid.Column>
+                  {/* <Grid.Column>
                     <b style={{ color: "grey" }}>Ailments</b>
                     <div style={{ fontWeight: "bold" }}>
                       {this.props.ailments}
                     </div>
-                  </Grid.Column>
+                  </Grid.Column> */}
                   <Grid.Column>
                     <b style={{ color: "grey" }}>Medications</b>
                     <div style={{ fontWeight: "bold" }}>
