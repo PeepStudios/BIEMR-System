@@ -236,8 +236,8 @@ class RegisterPatient extends Component {
                         <br/>
                         <Form.Group widths='equal'>
                             <Form.TextArea
-                                label='Medications'
-                                placeholder='Eg. Paracetamol'
+                                label='Summary'
+                                placeholder='Eg. February 2024- Malaria, May 2024 - UTI'
                                 value={this.state.medication}
                                 onChange={event =>
                                     this.setState({medication: event.target.value})}
